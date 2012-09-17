@@ -11,8 +11,8 @@ function uglify(orig_code, options){
   return final_code;
 };
 
-uglify.parser = require("./lib/parse-js");
-uglify.uglify = require("./lib/process");
-uglify.consolidator = require("./lib/consolidator");
+uglify.parser = require("uglify-js/lib/parse-js");
+uglify.uglify = require("uglify-js/lib/process");
+uglify.consolidator = require("uglify-js/lib/consolidator");
 
 module.exports = uglify
